@@ -10,6 +10,6 @@ message Example {
 }
 ```
 
-Without validation rules in the .proto definitions, the developer is required to maintain boilerplate validation code. This repo implements an example of this in the `experiment/validate.go` file. This is a major pain because code must be maintained for each language that is expected to work with the Example message and must be maintained consistently.
+Without validation rules in the .proto definitions, the developer is required to maintain boilerplate validation code. This repo implements an example of this in the `example/validate.go` file. This is a major pain because code must be maintained for each language that is expected to work with the Example message and must be maintained consistently.
 
 This validate code is completely boilerplate, and it could be so much better if these type of schema rules were supported in the .proto definition itself. The validation code could be generated and baked into the proto.Marshal and proto.Unmarshal code in an automated and consistent fashion.
