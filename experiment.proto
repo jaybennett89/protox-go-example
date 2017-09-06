@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package experiment;
+
+// a more complex structure with rules
+message Example {
+    string message = 1; // `pattern: $[a-zA-Z].*`
+    int32 percentage = 2; // `minValue: 0, maxValue: 100`
+    repeated int32 list = 3; // `minItems: 1, maxItems: 10`
+}
