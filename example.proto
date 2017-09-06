@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package experiment;
+package example;
 
 message Example {
     string message = 1; // `pattern: $[a-zA-Z].*`

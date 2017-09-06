@@ -1,5 +1,5 @@
 build:
-	protoc --go_out=experiment/ experiment.proto
+	protoc --go_out=example/ example.proto
 
 test: 
-	go test -v ./experiment
+	go test -v ./example
